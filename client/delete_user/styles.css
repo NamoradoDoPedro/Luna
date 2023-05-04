@@ -1,0 +1,30 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background: linear-gradient(#000420 55%, #000000 100%);
+    width: 100%;
+    min-height: 100vh;
+}
+#back-btn{
+    cursor: pointer;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    background-color: transparent;
+    font-size: 20px;
+    color: rgb(150,150,150);
+    border: none;
+    width: 120px;
+    height: 60px;
+    border-left-color: transparent;
+    transition: .3s;
+}
+#back-btn:hover{
+    text-shadow: yellow 0px 0px 20px;
+    color: yellow;
+    font-size: 25px;
+    border-left-color: transparent;
+}
+#back-btn:active ~ body{
+    opacity: 0;
+}

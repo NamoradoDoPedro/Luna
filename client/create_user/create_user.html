@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="vignette"></div>
+    <div class="container" method="get">
+        <div class="single-input">
+            <label for="name" class="labels" id="label-text">Nome</label>
+            <input type="text" id="name" class="input" required>
+        </div>
+        <div class="single-input">
+            <label for="email" class="labels" id="label-email">E-mail</label>
+            <input type="email" id="email" class="input" required>
+        </div>
+        <div class="single-input">
+            <label for="age" class="labels" id="label-age">Nascimento</label>
+            <input type="date" id="age" class="input" required>
+        </div>
+        <div class="single-input">
+            <label for="sex" class="labels" id="label-sex">Sexo</label>
+            <select id="sex">
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Outro">Outro</option>
+            </select>
+        </div>
+
+        <button id="confirm-btn">Confirmar</button>
+    </div>
+
+    <button id="back-btn">Voltar</button>
+    <!--Não apagar-->
+    <script src="index.js"></script>
+</body>
+
+</html>

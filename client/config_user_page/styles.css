@@ -1,0 +1,346 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.vignette {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
+}
+
+.users-btn {
+    font-size: 40px;
+    color: rgb(190, 190, 190);
+    background-color: transparent;
+    border: transparent;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    cursor: pointer;
+    font-family: Arial;
+    border-radius: 500px;
+}
+
+#user-div {
+    position: absolute;
+    align-content: center;
+    background-color: rgb(125, 0, 0);
+    box-shadow: black 0px 0px 30px;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -70%);
+    animation-name: container;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 5s;
+    animation-name: div-view;
+}
+
+#create-btn {
+    font-size: 30px;
+    color: rgb(190, 190, 190);
+    background-color: transparent;
+    border: transparent;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    cursor: pointer;
+    font-family: Arial;
+    border-radius: 500px;
+}
+
+#create-div {
+    position: absolute;
+    align-content: center;
+    background-color: rgb(163, 19, 93);
+    box-shadow: black 0px 0px 30px;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 500px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-100%, -20%);
+    animation-name: container;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 3s;
+    animation-name: div-create;
+
+}
+
+#view-btn:hover {
+    color: white;
+    text-shadow: white 0px 0px 10px;
+    background-color: transparent;
+}
+
+#view-btn:active {
+    transition: .2s;
+    color: grey;
+    font-size: 38px;
+}
+
+#create-btn:hover {
+    color: white;
+    text-shadow: white 0px 0px 10px;
+}
+
+#create-btn:active {
+    transition: .2s;
+    color: grey;
+    font-size: 28px;
+}
+
+.back-div-btn {
+    position: fixed;
+    background-color: rgb(0, 165, 11);
+    box-shadow: black 0px 0px 30px;
+    width: 115px;
+    height: 115px;
+    left: 700px;
+    top: 500px;
+    border-radius: 500px;
+    animation-name: container;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 3.5s;
+    animation-name: div-back;
+}
+
+@keyframes div-back {
+    from {
+        top: 410px;
+    }
+
+    to {
+        top: 430px;
+    }
+}
+
+#back-btn {
+    margin-top: 30px;
+    border: none;
+    font-size: 25px;
+    color: rgb(190, 190, 190);
+    width: 120px;
+    height: 60px;
+    transition: .5s;
+}
+
+#back-btn:hover {
+    color: white;
+    border-left-color: transparent;
+    text-shadow: white 0px 0px 20px;
+}
+
+.background-div {
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes div-create {
+    from {
+        transform: translate(-100%, -30%);
+    }
+
+    to {
+        transform: translate(-100%, -40%);
+    }
+}
+
+@keyframes div-view {
+    from {
+        transform: translate(-10%, -70%);
+    }
+
+    to {
+        transform: translate(-10%, -80%);
+    }
+}
+
+.background div {
+    display: block;
+    position: fixed;
+    transition: 1s ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: -1;
+}
+
+#N00 {
+    left: -150px;
+    height: 500px;
+    width: 500px;
+    border-radius: 255.0px;
+    background-color: rgb(186, 198, 151);
+    filter: blur(4px);
+    animation-name: n00;
+    animation-duration: 4s;
+}
+
+#N01 {
+    left: 1000px;
+    bottom: 326px;
+    height: 713px;
+    width: 713px;
+    border-radius: 356.5px;
+    background-color: rgb(135, 118, 204);
+    filter: blur(10px);
+    box-shadow: black 0px 0px 10px;
+    animation-name: n01;
+    animation-duration: 6s;
+}
+
+#N02 {
+    left: 10px;
+    bottom: 300px;
+    height: 300px;
+    width: 300px;
+    border-radius: 372.0px;
+    border-radius: 162.5;
+    background-color: rgb(188, 44, 193);
+    filter: blur(8px);
+    box-shadow: black 0px 0px 10px;
+    animation-name: n02;
+    animation-duration: 2s;
+}
+
+#N03 {
+    left: 100px;
+    bottom: 632px;
+    height: 331px;
+    width: 331px;
+    border-radius: 200px;
+    background-color: #455b26;
+    filter: blur(5px);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px;
+    animation-name: n03;
+    animation-duration: 6s;
+}
+
+#N04 {
+    left: 380px;
+    height: 200px;
+    width: 200px;
+    border-radius: 278.0px;
+    background-color: #f9f502;
+    filter: blur(4px);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
+    animation-name: n04;
+    animation-duration: 5s;
+}
+
+#N05 {
+    left: 860px;
+    bottom: 773px;
+    height: 106px;
+    width: 106px;
+    border-radius: 53.0px;
+    background-color: rgb(162, 88, 173);
+    filter: blur(5px);
+    box-shadow: black 0px 0px 20px;
+    animation-name: n05;
+    animation-duration: 3s;
+}
+
+#N06 {
+    left: 900px;
+    bottom: 10px;
+    height: 290px;
+    width: 290px;
+    border-radius: 145.0px;
+    background-color: rgb(126, 207, 229);
+    filter: blur(8px);
+    box-shadow: black 0px 0px 5px;
+    animation-name: n06;
+    animation-duration: 2s;
+}
+
+@keyframes n00 {
+    from {
+        bottom: -280px;
+    }
+
+    to {
+        bottom: -260px;
+    }
+}
+
+@keyframes n01 {
+    from {
+        bottom: 300px;
+    }
+
+    to {
+        bottom: 340px;
+    }
+}
+
+@keyframes n02 {
+    from {
+        bottom: 300px;
+    }
+
+    to {
+        bottom: 340px;
+    }
+}
+
+@keyframes n03 {
+    from {
+        bottom: 632px;
+    }
+
+    to {
+        bottom: 660px;
+    }
+}
+
+@keyframes n04 {
+    from {
+        bottom: 320px;
+    }
+
+    to {
+        bottom: 340px;
+    }
+}
+
+@keyframes n05 {
+    from {
+        bottom: 773px;
+    }
+
+    to {
+        bottom: 713px;
+    }
+}
+
+@keyframes n06 {
+    from {
+        bottom: 10px;
+    }
+
+    to {
+        bottom: -40px;
+    }
+}

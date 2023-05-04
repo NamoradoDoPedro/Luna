@@ -1,0 +1,270 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: linear-gradient(rgb(56, 56, 56), rgb(0, 0, 0));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-height: 1200px;
+    width: 60%;
+    margin-bottom: 2%;
+}
+
+#customers {
+    position: relative;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: rgb(221, 221, 221);
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(0, 0, 90);
+    color: white;
+}
+
+.edit-btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.del-btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+#back-btn {
+    cursor: pointer;
+    position: fixed;
+    left: 0%;
+    bottom: 0%;
+    background-color: transparent;
+    font-size: 20px;
+    color: rgb(150, 150, 150);
+    width: 120px;
+    height: 60px;
+    border-left-color: transparent;
+    border: none;
+    transition: .3s;
+}
+
+#back-btn:hover {
+    color: white;
+    font-size: 25px;
+    border-left-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0022ab33;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #000032;
+}
+
+.background div {
+    display: block;
+    position: fixed;
+    transition: 1s ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: -1;
+}
+
+#N00 {
+    left: -110px;
+    bottom: -200px;
+    height: 450px;
+    width: 450px;
+    border-radius: 350px;
+    background-color: darkturquoise;
+    filter: blur(4px);
+    animation-name: n00;
+    animation-duration: 4s;
+}
+
+#N01 {
+    left: 1100px;
+    bottom: 120px;
+    background-color: orangered;
+    filter: blur(10px);
+    box-shadow: black 0px 0px 10px;
+    height: 160px;
+    border-radius: 350px;
+    width: 160px;
+    animation-name: n01;
+    animation-duration: 6s;
+}
+
+#N02 {
+    left: 100px;
+    bottom: 450px;
+    height: 100px;
+    width: 100px;
+    border-radius: 350px;
+    background-color: green;
+    filter: blur(8px);
+    box-shadow: black 0px 0px 10px;
+    animation-name: n02;
+    animation-duration: 2s;
+}
+
+#N03 {
+    left: 900px;
+    bottom: 400px;
+    height: 700px;
+    width: 700px;
+    border-radius: 350px;
+    background-color: yellow;
+    filter: blur(5px);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px;
+    animation-name: n03;
+    animation-duration: 6s;
+}
+
+#N04 {
+    left: 350px;
+    bottom: 320px;
+    border-radius: 350px;
+    height: 50px;
+    width: 50px;
+    background-color: darkred;
+    filter: blur(4px);
+    box-shadow: black 0px 0px 10px;
+    animation-name: n04;
+    animation-duration: 5s;
+}
+
+#N05 {
+    left: 520px;
+    bottom: -250px;
+    border-radius: 500px;
+    height: 500px;
+    width: 500px;
+    background-color: purple;
+    filter: blur(5px);
+    box-shadow: black 0px 0px 20px;
+    animation-name: n05;
+    animation-duration: 3s;
+}
+
+#N06 {
+    left: 250px;
+    bottom: 380px;
+    border-radius: 500px;
+    height: 500px;
+    width: 500px;
+    background-color: pink;
+    filter: blur(8px);
+    box-shadow: black 0px 0px 5px;
+    animation-name: n06;
+    animation-duration: 2s;
+}
+
+@keyframes n00 {
+    from {
+        bottom: -200px;
+    }
+
+    to {
+        bottom: -130px;
+    }
+}
+
+@keyframes n01 {
+    from {
+        bottom: 120px;
+    }
+
+    to {
+        bottom: 150px;
+    }
+}
+
+@keyframes n02 {
+    from {
+        bottom: 450px;
+    }
+
+    to {
+        bottom: 420px;
+    }
+}
+
+@keyframes n03 {
+    from {
+        bottom: 400px;
+    }
+
+    to {
+        bottom: 320px;
+    }
+}
+
+@keyframes n04 {
+    from {
+        bottom: 320px;
+    }
+
+    to {
+        bottom: 340px;
+    }
+}
+
+@keyframes n05 {
+    from {
+        bottom: -250px;
+    }
+
+    to {
+        bottom: -210px;
+    }
+}
+
+@keyframes n06 {
+    from {
+        bottom: 380px;
+    }
+
+    to {
+        bottom: 400px;
+    }
+}
